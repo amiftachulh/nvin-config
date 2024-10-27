@@ -25,11 +25,14 @@ return {
         }
       end,
       formatters_by_ft = {
+        go = { 'gofumpt', 'goimports_reviser', 'golines' },
+        javascript = { 'prettierd' },
+        javascriptreact = { 'prettierd' },
         lua = { 'stylua' },
-        javascript = { 'prettier' },
-        typescript = { 'prettier' },
-        javascriptreact = { 'prettier' },
-        typescriptreact = { 'prettier' },
+        sql = { 'sql_formatter' },
+        svelte = { 'prettierd' },
+        typescript = { 'prettierd' },
+        typescriptreact = { 'prettierd' },
       },
     },
   },
