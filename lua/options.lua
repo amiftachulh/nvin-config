@@ -24,3 +24,4 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.fillchars = { eob = ' ' }
 vim.opt.wrap = false
+vim.opt.relativenumber = true

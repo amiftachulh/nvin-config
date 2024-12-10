@@ -5,6 +5,8 @@ return {
     dependencies = 'nvim-tree/nvim-web-devicons',
     event = 'VeryLazy',
     keys = {
+      -- { '<leader>bd', '<Cmd>enew<bar>bd #<CR>', desc = 'Delete Current Buffer' },
+      { '<leader>bd', '<Cmd>bp<bar>bd #<CR>', desc = 'Delete Current Buffer' },
       { '<leader>bp', '<Cmd>BufferLineTogglePin<CR>', desc = 'Toggle Pin' },
       { '<leader>bP', '<Cmd>BufferLineGroupClose ungrouped<CR>', desc = 'Delete Non-Pinned Buffers' },
       { '<leader>bo', '<Cmd>BufferLineCloseOthers<CR>', desc = 'Delete Other Buffers' },

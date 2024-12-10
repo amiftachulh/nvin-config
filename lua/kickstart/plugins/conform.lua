@@ -20,7 +20,7 @@ return {
         -- languages here or re-enable it for the disabled ones.
         local disable_filetypes = { c = true, cpp = true }
         return {
-          timeout_ms = 5000,
+          timeout_ms = 10000,
           lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
         }
       end,
@@ -28,6 +28,7 @@ return {
         go = { 'gofumpt', 'goimports_reviser', 'golines' },
         javascript = { 'prettier' },
         javascriptreact = { 'prettier' },
+        json = { 'prettier' },
         lua = { 'stylua' },
         sql = { 'sql_formatter' },
         svelte = { 'prettier' },
